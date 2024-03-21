@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/formLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="48dp"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="351dp"
+        android:layout_height="48dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toTopOf="@+id/firstNameEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <!-- Strzalka -->
+        <ImageView
+            android:id="@+id/customForwardArrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:contentDescription="@string/arrow_to_grades_activity"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:src="@drawable/baseline_arrow_forward_24" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+
+    <Button
+        android:id="@+id/superButton"
+        android:layout_width="286dp"
+        android:layout_height="118dp"
+        android:text="@string/superx"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gradesButton"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/notSoSuperButton"
+        android:layout_width="159dp"
+        android:layout_height="159dp"
+        android:text="@string/tym_razem_mi_nie_posz"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.57"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gradesButton"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/firstNameEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:autofillHints="@string/imie_auto_fill"
+        android:hint="@string/imie_edit_hint"
+        android:inputType="text"
+        android:textColorHint="#546E7A"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/firstNameLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/lastNameEditText"
+        app:layout_constraintTop_toTopOf="@+id/firstNameLabel"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/gradesButton"
+        android:layout_width="208dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="32dp"
+        android:onClick="calculateAverage"
+        android:text="@string/oceny"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.607"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gradesEditText" />
+
+    <EditText
+        android:id="@+id/gradesEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:autofillHints="5"
+        android:hint="@string/liczba_ocen_edit_hint"
+        android:inputType="number"
+        android:textColorHint="#546E7A"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/gradesLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/gradesLabel"
+        app:layout_constraintTop_toTopOf="@+id/gradesLabel"
+        app:layout_constraintVertical_bias="0.576" />
+
+    <EditText
+        android:id="@+id/lastNameEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:autofillHints="@string/nazwisko_auto_fill"
+        android:hint="@string/nazwisko_edit_hint"
+        android:inputType="text"
+        android:textColorHint="#546E7A"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/lastNameLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/gradesEditText"
+        app:layout_constraintTop_toTopOf="@+id/lastNameLabel"
+        app:layout_constraintVertical_bias="0.269" />
+
+    <TextView
+        android:id="@+id/gradesLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/liczba_ocen"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lastNameEditText" />
+
+
+    <TextView
+        android:id="@+id/firstNameLabel"
+        android:layout_width="72dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="76dp"
+        android:text="@string/imie"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/firstNameEditText"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lastNameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/nazwisko"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/firstNameEditText" />
+
+    <TextView
+        android:id="@+id/averageLabel"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/srednia_ocen"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/averageTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gradesEditText" />
+
+
+    <TextView
+        android:id="@+id/averageTextView"
+        android:layout_width="215dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="4dp"
+        android:text=""
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.941"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/gradesEditText" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Lab2_2</string>
+    <string name="imie">Name:</string>
+    <string name="nazwisko">Last name:</string>
+    <string name="liczba_ocen">Number of grades:</string>
+    <string name="oceny">Grades</string>
+    <string name="first_name_empty_error">The NAME field cannot be empty</string>
+    <string name="last_name_empty_error">The LAST NAME field cannot be empty</string>
+    <string name="grades_range_error">The number of grades must be a value between 5 and 15</string>
+    <string name="button_clicked_toast">The GRADES button has been clicked</string>
+    <string name="imie_auto_fill">Name</string>
+    <string name="imie_edit_hint">Enter name</string>
+    <string name="nazwisko_auto_fill">Last name</string>
+    <string name="nazwisko_edit_hint">Enter last name</string>
+    <string name="liczba_ocen_edit_hint">Enter grade number</string>
+    <string name="srednia_studenta">Student\'s grade point average:</string>
+    <string name="superx">Great :)</string>
+    <string name="tym_razem_mi_nie_posz">I didn\'t do so well this time</string>
+    <string name="oblicz_srednia">Calculate average</string>
+    <string name="submit">Submit</string>
+    <string name="oblicz_redni">Calculate average</string>
+    <string name="liczbe_ocen">Enter number of grades</string>
+    <string name="srednia_ocen">Grade point average:</string>
+    <string name="average">Average: %.2f</string>
+    <string name="arrow_to_grades_activity">arrow to Grades Activity</string>
+    <string name="arrow_back_to_main_activity">arrow back to Main Activity</string>
+    <string name="gratulacje_otrzymujesz_zaliczenie">Congratulations! You\'ve passed!</string>
+    <string name="wysy_am_podanie_o_zaliczenie_warunkowe">I\'m sending a conditional pass request</string>
+    <string name="please_enter_grades">Eneter your grades please</string>
+    <string name="wprowadz_ocene">Enter grade</string>
+    <string name="please_enter_a_grade">Please enter a grade</string>
+    <string name="grade_must_be_between_2_and_5">The grade must be a value between 2 and 5</string>
+    <string name="please_enter_all_grades">Please enter all grades</string>
+    <string name="enter_grade">Enter grade</string>
+</resources>

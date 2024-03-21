@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">Lab2_2</string>
+    <string name="imie">Imię:</string>
+    <string name="nazwisko">Nazwisko:</string>
+    <string name="liczba_ocen">Liczba ocen:</string>
+    <string name="oceny">Oceny</string>
+    <string name="first_name_empty_error">Pole IMIĘ nie może być puste</string>
+    <string name="last_name_empty_error">Pole NAZWISKO nie może być puste</string>
+    <string name="grades_range_error">Liczba ocen musi zawierać się między 5 a 15</string>
+    <string name="button_clicked_toast">Przycisk OCENY został naciśnięty</string>
+    <string name="imie_auto_fill">Imię</string>
+    <string name="imie_edit_hint">Wpisz imię</string>
+    <string name="nazwisko_auto_fill">Nazwisko</string>
+    <string name="nazwisko_edit_hint">Wpisz nazwisko</string>
+    <string name="liczba_ocen_edit_hint">Wpisz liczbę ocen</string>
+    <string name="srednia_studenta">"Średnia studenta: "</string>
+    <string name="superx">\nSuper :)</string>
+    <string name="tym_razem_mi_nie_posz">\nTym razem mi nie poszło</string>
+    <string name="oblicz_srednia">Oblicz srednia</string>
+    <string name="submit">Potwierdz</string>
+    <string name="oblicz_redni">Oblicz średnią</string>
+    <string name="liczbe_ocen">Wprowadz liczbe ocen</string>
+    <string name="srednia_ocen">Srednia ocen:</string>
+    <string name="average">Średnia: %.2f</string>
+    <string name="arrow_to_grades_activity">strzalka do Grades Activity</string>
+    <string name="arrow_back_to_main_activity">strzalka do Main Activity</string>
+    <string name="numberOfGrades" translatable="false">numberOfGrades</string>
+    <string name="firstname" translatable="false">firstName</string>
+    <string name="lastname" translatable="false">lastName</string>
+    <string name="grades" translatable="false">grades</string>
+    <string name="buttonvisibility" translatable="false">buttonVisibility</string>
+    <string name="average_value" translatable="false">average</string>
+    <string name="myprefs" translatable="false">MyPrefs</string>
+    <string name="averagegrade" translatable="false">averageGrade</string>
+    <string name="gratulacje_otrzymujesz_zaliczenie">Gratulacje! Otrzymujesz zaliczenie!</string>
+    <string name="wysy_am_podanie_o_zaliczenie_warunkowe">Wysyłam podanie o zaliczenie warunkowe</string>
+    <string name="average_2f" translatable="false">Average: %.2f</string>
+    <string name="average_string" translatable="false">average</string>
+    <string name="please_enter_grades" translatable="false">Prosze wprowadzic oceny</string>
+    <string name="wprowadz_ocene" translatable="false">Wprowadz ocene</string>
+    <string name="ocena" translatable="false">grade_</string>
+    <string name="please_enter_a_grade" translatable="false">Prosze wprowadzic ocene\n</string>
+    <string name="grade_must_be_between_2_and_5" translatable="false">Ocena musi byc miedzy 2 a 5</string>
+    <string name="please_enter_all_grades">Prosze wprowadzic wszystkie oceny</string>
+    <string name="enter_grade">"Wprowadz ocene "</string>
+    <string name="grade">grade_</string>
+    <string-array name="subjects">
+        <item>Matematyka</item>
+        <item>Fizyka</item>
+        <item>Chemia</item>
+    </string-array>
+</resources>
